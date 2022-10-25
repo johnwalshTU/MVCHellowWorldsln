@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using HellowWorld.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace HellowWorld.Controllers
 {
@@ -19,6 +20,15 @@ namespace HellowWorld.Controllers
             return "Hello " + name + " num = " + num;
         }
 
+        public string Welcome3(string name, int numtimes)
+        {            
+            return "Hello " + name + " num = " + numtimes;
+        }
+
+        public string Welcome4(Person p)
+        {
+            return "Hello person " + p.Name + " num = " + p.Numtimes;
+        }
     }
 }
 
