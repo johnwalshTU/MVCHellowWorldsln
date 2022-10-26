@@ -62,8 +62,12 @@ namespace HellowWorld.Controllers
         
         public IActionResult Welcome5(string name, int numtimes)
         {
-            ViewBag.Message = "Hello " + name;
-            ViewBag.number  = numtimes;
+            ViewData["Message"] = "Hello " + name;
+            ViewData["number"] = numtimes;
+            
+            //--to use ViewBag instead we just create property on the fly as needed
+            //ViewBag.Message = "Hello " + name;
+            //ViewBag.number  = numtimes;
             return View();
         }
 
