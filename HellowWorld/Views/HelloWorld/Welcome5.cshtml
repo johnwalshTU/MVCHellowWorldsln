@@ -1,0 +1,15 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h1>This is our Welcome 5 page</h1>
+
+@* comment : <ul> and <li> are html tags for drawing list *@
+<ul>
+    @for (int i = 0; i < ViewBag.number; i++)
+    {
+       <li> @ViewBag.Message </li>
+    }
+</ul>
