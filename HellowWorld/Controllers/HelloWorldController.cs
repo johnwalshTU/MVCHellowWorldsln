@@ -19,7 +19,7 @@ namespace HellowWorld.Controllers
         }
 
         /// <summary>
-        /// This action allows us to pass some params to it as part of the url eg.. url?name=john;numtimes=4
+        /// This action allows us to pass some params to it as part of the url eg.. url?name=john&numtimes=4
         /// We then look inside the Request to extract these params
         /// </summary>
         /// <returns></returns>
@@ -32,7 +32,7 @@ namespace HellowWorld.Controllers
 
         /// <summary>
         /// This action defines method paramaters.
-        /// if the url params (e.g  url?name=john;numtimes=4) match the params names to this mehtod, then those values will be passed into this method
+        /// if the url params (e.g  url?name=john&numtimes=4) match the params names to this mehtod, then those values will be passed into this method
         /// </summary>
         /// <param name="name"></param>
         /// <param name="numtimes"></param>
