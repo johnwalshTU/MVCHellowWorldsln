@@ -1,4 +1,7 @@
-﻿namespace HellowWorld.Models
+﻿using System.ComponentModel.DataAnnotations;
+using System.Xml.Linq;
+
+namespace HellowWorld.Models
 {
     //A simple Model Class
     //The Model is where our Business data (and business rules) will live
@@ -7,7 +10,10 @@
 
     public class Student
     {
+        [Display(Name = "Student Name")]  //the default display name is property name (i.e Name) so i can use Display(Name..) to set it to a different title)
         public string Name { get; set; } = "";
-        public int    Age  { get; set; }
+
+        [Display(Name = "Student Age")] //the default display name is property name(i.e Age) so i can use Display(Name..) to set it to a different title e.g Student Age)
+        public int  Age  { get; set; }
     }
 }

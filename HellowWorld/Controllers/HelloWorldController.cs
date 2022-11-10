@@ -7,7 +7,7 @@ namespace HellowWorld.Controllers
     {
 
         /// <summary>
-        /// Most basic action (method)TYhis simply returns a string (in the http response) whihc the browser will then display
+        /// Most basic action (method)TYhis simply returns a string (in the http response) which the browser will then display
         /// </summary>
         /// <returns></returns>
         public string Index()
@@ -19,7 +19,7 @@ namespace HellowWorld.Controllers
         }
 
         /// <summary>
-        /// This action allows us to pass some params to it as part of the url eg.. url?name=john&numtimes=4
+        /// This action allows us to pass some params to it as part of the url eg.. url/helloworld/welcome2?name=john&numtimes=4
         /// We then look inside the Request to extract these params
         /// </summary>
         /// <returns></returns>
@@ -32,7 +32,7 @@ namespace HellowWorld.Controllers
 
         /// <summary>
         /// This action defines method paramaters.
-        /// if the url params (e.g  url?name=john&numtimes=4) match the params names to this mehtod, then those values will be passed into this method
+        /// if the url params (e.g  url/helloworld/welcome3?name=john&numtimes=4) match the params names to this mehtod, then those values will be passed into this method
         /// </summary>
         /// <param name="name"></param>
         /// <param name="numtimes"></param>
@@ -44,7 +44,8 @@ namespace HellowWorld.Controllers
 
         /// <summary>
         /// This action allows for a model to be passed in.. If any of the model properties names match the params on the url, then those values will be copied into the model
-        /// The model will then be passed into thsi method
+        /// The model will then be passed into this method
+        /// example url -> url/helloworld/welcome4?name=john&numtimes=4
         /// </summary>
         /// <param name="p"></param>
         /// <returns></returns>
@@ -71,8 +72,8 @@ namespace HellowWorld.Controllers
             return View();
         }
 
-
         /*
+        ///route : helloworld/welcome6?name=john&age=21
         public IActionResult Welcome6(string studentName, int age)
         {
             //URL will pass in studentName and age
@@ -90,6 +91,9 @@ namespace HellowWorld.Controllers
             return View(p);   //we can pass studnet p directly to view as a parameter
         }
         */
+
+
+        ///route : helloworld/welcome6?name=john&age=21
         public IActionResult Welcome6(Student p)
         {
             //URL will pass in studentName and age
