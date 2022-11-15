@@ -1,0 +1,19 @@
+﻿@model HellowWorld.Models.Student
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<!-- When Submit is clicked this form values are posted to  url .. /Person/create  -->
+<form action="/student/create" method="post">
+    
+    <input name="name" value="@Model?.Name"> </br>  <!-- if model has Name value it will be filled in -->
+    <input name="age" value="@Model?.Age"></br>     <!-- if model has age value it will be filled in -->
+    <input type="submit" Value="Create Student" />
+</form>
+
+@*  ? in @Model? is a null check. If model is null then it does check for Name value *@
+
+

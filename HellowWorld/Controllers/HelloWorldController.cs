@@ -104,7 +104,7 @@ namespace HellowWorld.Controllers
             //   Under the hood, student p is storted in the viewbag (i.e ViewBag.Model = p) 
             //   so that the controller can access it 
             return View(p);   //we can pass studnet p directly to view as a parameter
-        }
+        }       
     }
 }
 
